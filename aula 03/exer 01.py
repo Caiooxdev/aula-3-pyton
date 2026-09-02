@@ -1,5 +1,5 @@
-um = int(input("digite um numero"))
-dois = int(input("digite outro numero"))
+um = int(input("digite um numero: "))
+dois = int(input("digite outro numero: "))
 
 
 

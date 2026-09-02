@@ -13,4 +13,4 @@ litros = area_cilindro / 3
 qtd_latas  = ceil(litros / 5)
 
 if qtd_latas == 1:
-    print(f"quantidade de latas:  {qtd_latas} | custo total 
+    print(f"quantidade de latas:  {qtd_latas} | custo total: R$ {qtd_latas * 50:.2f}")
