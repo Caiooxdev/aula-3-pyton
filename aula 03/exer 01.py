@@ -1,15 +1,11 @@
-um = int(input("digite um numero: "))
-dois = int(input("digite outro numero: "))
+a = int(input("Digite um numero: "))
+b = int(input("Digite outro numero: "))
 
+if a < b:
+    print("Maior:", b)
 
-
-if um < dois:
-    print(um, "é menor que", dois)
-else:
-    print(dois, "é menor que", um)
-
-print("isso executa sempre ")
-
+if b < a:
+    print("Maior:", a)
  
 
 

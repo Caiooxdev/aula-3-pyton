@@ -1,16 +1,29 @@
 from math import ceil
 
-Altura = float(input("Digite a altura da parede: "))
-raio = float(input("Digite a largura da parede: "))
+altura = float(input("Altura: "))
+raio = float(input("Raio: "))
 
-raio_base = raio*raio*3.1415
-perimetro = 2*raio*3.1415
+area_base = 3.1415 * (raio ** 2)
+perimetro = 2 * 3.1415 * raio
 area_lateral = altura * perimetro
-area_cilindro = rea_base + area_lateral
+area_total = area_base + area_lateral
 
+litros = area_total / 3
+latas = ceil(litros / 5)
 
-litros = area_cilindro / 3
-qtd_latas  = ceil(litros / 5)
+if latas == 1:
+    preco_unit = 50.00
+elif latas == 2:
+    preco_unit = 48.00
+elif latas == 3:
+    preco_unit = 46.00
+else:
+    preco_unit = 45.00
 
-if qtd_latas == 1:
-    print(f"quantidade de latas:  {qtd_latas} | custo total: R$ {qtd_latas * 50:.2f}")
+custo_total = latas * preco_unit
+
+print("Área a ser pintada:", round(area_total, 2))
+print("Qtde de litros necessários:", round(litros, 2))
+print("Qtde de latas de tinta:", latas)
+print("Preço unitário da lata: R$ %.2f" % preco_unit)
+print("Custo total: R$ %.2f" % custo_total)
