@@ -15,6 +15,26 @@
 #▶ A área da lateral é altura multiplicada pelo perímetro
 #▶ O perímetro é 2 × π × r
 
+import math
+
+# 1. Entrada de dados
+raio = float(input("Digite o raio do cilindro: "))
+altura = float(input("Digite a altura do cilindro: "))
+pi = 3.1415
+
+# 2. Cálculos de geometria
+perimetro = 2 * pi * raio
+area_lateral = altura * perimetro
+area_base = pi * (raio ** 2)
+
+# Área total do cilindro (2 bases + área lateral)
+area_total = area_lateral + area_base
+
+# 3. Cálculo de litros e latas necessárias
+litros = area_total / 3
+latas = math.ceil(litros / 5)
+
+# 4. Estrutura de decisão para definir o preço por quantidade de latas
 if latas == 1:
     preco_unitario = 50.00
 elif latas == 2:
@@ -26,15 +46,12 @@ else:
 
 custo_total = latas * preco_unitario
 
-# Mostrando o resultado final formatado
-print(f"Latas necessárias: {latas}")
+# 5. Saída de resultados formatados
+print(f"Área a ser pintada: {area_total:.2f}")
+print(f"Qtde de litros necessários: {litros:.2f}")
+print(f"Qtde de latas de tinta: {latas}")
+print(f"Preço unitário da lata: R$ {preco_unitario:.2f}")
 print(f"Custo total: R$ {custo_total:.2f}")
-
-
-
-
-
-
 
 
 
