@@ -1,0 +1,1 @@
+lanche = ("hambúrguer", "suco", "pizza", )
