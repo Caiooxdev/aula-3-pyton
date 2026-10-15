@@ -9,6 +9,6 @@ while True:
 
 print("palavra digitadas: ")
 for palavra in l:
-    print()
+    print(palavra)
 
     
