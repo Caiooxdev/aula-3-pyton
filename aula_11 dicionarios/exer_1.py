@@ -1,8 +1,16 @@
-dicionário = {
-    1: "exemplo",
-    2: "dois",
-    'lista': ['a', 'b', 'c']
+def procurachave(dicionario, valor):
+   L = []
+   for chave in dicionario:
+      if dicionario[chave] == valor:
+         L.append(chave)
+   return L
 
+dict = {
+
+   'alpha': 1,
+   'bravo': 2,
+   'charlie': 1,
+   'delta': 4,
+   'echo': 5
 }
-
-print(dicionário["lista"])  
+print(procurachave(dict, 1))  # Saída: ['alpha', 'charlie']
