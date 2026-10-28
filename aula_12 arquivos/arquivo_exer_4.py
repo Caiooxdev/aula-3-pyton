@@ -41,9 +41,10 @@ def exibemenu():
 
 
 def processamenu(menu):
-    if menu == 1:
-        print("novo contato")
-        return True
+   if menu == 1:
+    novocontato()
+     print(contatos)
+     return True
     elif menu == 2:
         print("buscar contato")
         return True
@@ -61,6 +62,7 @@ def processamenu(menu):
        
 
 while True:
+    carregarcontatos()
     exibemenu()
     menu = int(input("digite a opção desejada: "))
     if (not processamenu(menu)):
