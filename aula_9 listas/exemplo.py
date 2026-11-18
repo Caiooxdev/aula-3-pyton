@@ -1,6 +1,6 @@
-barra = ["="]
-barra = barra * 100
+barra = "=" * 100
 
 print(barra)
-print("bem vindo")
+print("EXCHANGE DE CRIPTOMOEDAS".center(100))
+print("SEJA BEM-VINDO!".center(100))
 print(barra)
